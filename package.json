@@ -10,7 +10,7 @@
   "private": true,
   "commands": [
     {
-      "name": "commands",
+      "name": "index",
       "title": "Utility Commands",
       "description": "Show all utility commands",
       "mode": "view"
