@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - uses: ./.github/actions/setup
       - run: npm run lint
+        env:
+          RAY_TOKEN: ${{ secrets.RAYCAST_ORGANIZATION_TOKEN }}
 
   build:
     runs-on: ubuntu-latest
