@@ -12,6 +12,7 @@ concurrency:
 jobs:
   ci:
     uses: ./.github/workflows/_ci.yml
+    secrets: inherit
 
   publish:
     needs: ci

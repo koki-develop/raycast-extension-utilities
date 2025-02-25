@@ -2,6 +2,9 @@ name: CI
 
 on:
   workflow_call:
+    secrets:
+      RAYCAST_ORGANIZATION_TOKEN:
+        required: true
 
 jobs:
   lint:
