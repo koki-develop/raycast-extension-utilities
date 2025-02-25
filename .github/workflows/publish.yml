@@ -10,7 +10,11 @@ concurrency:
   group: publish
 
 jobs:
+  ci:
+    uses: ./.github/workflows/_ci.yml
+
   publish:
+    needs: ci
     runs-on: ubuntu-latest
     steps:
       # Setup
