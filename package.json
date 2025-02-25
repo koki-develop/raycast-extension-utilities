@@ -14,6 +14,12 @@
       "title": "Open with Sakura Checker",
       "description": "Open Amazon product pages in Sakura Checker",
       "mode": "no-view"
+    },
+    {
+      "name": "copy-browser-tab",
+      "title": "Copy Browser Tab",
+      "description": "Copy the current browser tab to the clipboard",
+      "mode": "view"
     }
   ],
   "scripts": {
