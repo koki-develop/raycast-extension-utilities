@@ -10,15 +10,9 @@
   "private": true,
   "commands": [
     {
-      "name": "open-with-sakura-checker",
-      "title": "Open with Sakura Checker",
-      "description": "Open Amazon product pages in Sakura Checker",
-      "mode": "no-view"
-    },
-    {
-      "name": "copy-browser-tab",
-      "title": "Copy Browser Tab",
-      "description": "Copy the current browser tab to the clipboard",
+      "name": "commands",
+      "title": "Utility Commands",
+      "description": "Show all utility commands",
       "mode": "view"
     }
   ],
