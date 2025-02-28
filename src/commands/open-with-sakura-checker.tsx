@@ -1,12 +1,5 @@
-import {
-  Action,
-  ActionPanel,
-  BrowserExtension,
-  Icon,
-  List,
-  open,
-  showHUD,
-} from "@raycast/api";
+import { Action, BrowserExtension, Icon, open, showHUD } from "@raycast/api";
+import { SubCommand } from "..";
 
 const isAmazonUrl = (url: string) => {
   const { hostname } = new URL(url);
@@ -50,15 +43,11 @@ const extractAsin = (url: string): string | null => {
 
 export default function OpenWithSakuraChecker() {
   return (
-    <List.Item
+    <SubCommand
       title="Open with Sakura Checker"
       subtitle="Open Amazon product pages in Sakura Checker"
       icon={Icon.Glasses}
-      actions={
-        <ActionPanel>
-          <Action title="Open with Sakura Checker" onAction={main} />
-        </ActionPanel>
-      }
+      action={<Action title="Open with Sakura Checker" onAction={main} />}
     />
   );
 }

@@ -6,6 +6,7 @@ import {
   Icon,
 } from "@raycast/api";
 import { usePromise } from "@raycast/utils";
+import { SubCommand } from "..";
 
 const tabToMarkdown = (tab: BrowserExtension.Tab) =>
   `[${tab.title ?? "(untitled)"}](${tab.url})`;
@@ -15,15 +16,11 @@ const tabToHtml = (tab: BrowserExtension.Tab) =>
 
 export default function CopyBrowserTab() {
   return (
-    <List.Item
+    <SubCommand
       title="Copy Browser Tab"
       subtitle="Copy the current browser tab to the clipboard"
       icon={Icon.Link}
-      actions={
-        <ActionPanel>
-          <Action.Push title="Copy Browser Tab" target={<Command />} />
-        </ActionPanel>
-      }
+      action={<Action.Push title="Copy Browser Tab" target={<Command />} />}
     />
   );
 }
