@@ -53,7 +53,6 @@ function Command() {
                 content={{ text: tabToMarkdown(tab) }}
               />
               <Action.CopyToClipboard
-                // eslint-disable-next-line @raycast/prefer-title-case
                 title="Copy as HTML"
                 content={{ text: tabToHtml(tab) }}
               />
