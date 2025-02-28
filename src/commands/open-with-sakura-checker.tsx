@@ -47,7 +47,7 @@ export default function OpenWithSakuraChecker() {
       title="Open with Sakura Checker"
       subtitle="Open Amazon product pages in Sakura Checker"
       icon={Icon.Glasses}
-      action={<Action title="Open with Sakura Checker" onAction={main} />}
+      action={<Action title="Select" onAction={main} />}
     />
   );
 }

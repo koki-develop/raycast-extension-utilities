@@ -20,7 +20,7 @@ export default function CopyBrowserTab() {
       title="Copy Browser Tab"
       subtitle="Copy the current browser tab to the clipboard"
       icon={Icon.Link}
-      action={<Action.Push title="Copy Browser Tab" target={<Command />} />}
+      action={<Action.Push title="Select" target={<Command />} />}
     />
   );
 }
