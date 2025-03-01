@@ -15,6 +15,10 @@ const items: Item[] = [
     name: "Amazon S3",
     url: "https://console.aws.amazon.com/s3",
   },
+  {
+    name: "Amazon Route53",
+    url: "https://console.aws.amazon.com/route53",
+  },
 ];
 
 export default function AWSManagementConsoleLinks() {
