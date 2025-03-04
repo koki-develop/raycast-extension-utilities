@@ -19,6 +19,10 @@ const items: Item[] = [
     name: "Amazon Route53",
     url: "https://console.aws.amazon.com/route53",
   },
+  {
+    name: "AWS Lambda",
+    url: "https://console.aws.amazon.com/lambda",
+  },
 ];
 
 export default function AWSManagementConsoleLinks() {
