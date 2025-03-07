@@ -20,6 +20,10 @@ const items: Item[] = [
     url: "https://console.aws.amazon.com/route53",
   },
   {
+    name: "AWS IAM",
+    url: "https://console.aws.amazon.com/iam",
+  },
+  {
     name: "AWS Lambda",
     url: "https://console.aws.amazon.com/lambda",
   },
